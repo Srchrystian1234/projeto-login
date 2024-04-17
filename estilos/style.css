@@ -43,7 +43,7 @@ section#login > div#imagem{
     background:#5f2c82 url(../imagens/rio_lago.jpg) no-repeat ; /* colocamos um background com a imagem que vai ficar ao lado do login*/
     background-size: cover;/* pra caber tudo dentro da imagem , a imagem fico quadrada e nao redonda pq ela fico pra fora ,vmaos fazer la no section#login*/
     
-    height: 200px;
+    height: 200px;/* altura da parte de login*/
 }
 section#login > div#formulario{
     display: block;
