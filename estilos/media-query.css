@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* typical divice breakpoints
+-------------------------------
+pequenas telas: ate 600 pixels
+ceular: de 600 pixels ate 768px 
+tablet: 768 px ate 992px vamso fazer pra tablet
+desktop: 992px ate 12000px  e pra desktop
+grandes telas : acima de 1200px
+*/
+
+ /* versao para tablet*/@media screen and (min-width:768px) and (max-width:992px) {
+    /*  vamos mudar o tamanho dela */
+    section#login{
+        width: 
+        90vw;
+        /*  ficou um pouco maior aqui por pra aparecer em tela de tablet*/
+    }
+    /* agora vamos colocar uma div ao lado da outra , elas tem que esta em bloco (display:block) para pode funcionar*/
+    /* lembrando que essa configuração é pra tablet*/
+    section#login > div#imagem{
+        float: left;/* colocando uma div na esquerda e outra na direita*/
+        width: 30%; /* dando tamanho a imgaem*/
+        height: 100%;/* altura da imagem*/
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
