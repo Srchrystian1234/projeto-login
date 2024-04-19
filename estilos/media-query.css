@@ -46,14 +46,22 @@ grandes telas : acima de 1200px
     }
     /* configurando a div imagem tamanho e colocando ela ao lado da div formulario*/
     section#login > div#imagem{ /*confirando a imagem*/
-        float: left; /* colocando do lado esquerdo*/
+        float: right; /* colocando do lado esquerdo*/
         width: 50%; /* largura de 50%*/
         height: 100%; /* altura de 100%*/
     }
 
     section#login > div#formulario{
-        float: right;/* formulario lado esquerdo*/
+        float: left;/* formulario lado esquerdo*/
         width: 50%; /* largura de 50%*/
     }
     /* vamos colocar na css do padrao um animação agora*/
+    div#formulario > h1{
+        font-size: 2em;
+    }
+    div#formulario > p{
+        font-size: 1em;
+         
+     }
 }
+

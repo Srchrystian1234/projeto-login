@@ -31,7 +31,7 @@ section#login{ /* section que esta o id de login*/
     top: 50%; /* 50% do top*/
     transform: translate(-50%,-50%); /* pra deixar ele bem centralizado*/
     overflow:hidden ; /* tudo que tiver fora da borda vai ficar escondido*/
-    width: 250px; /* tamanho da caixa de login*/
+    width: 260px; /* tamanho da caixa de login*/
     height: 500px;/* altura */
     border-radius: 20px; /* borda curvada*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473); /* sombra*/
@@ -51,4 +51,14 @@ section#login > div#imagem{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+div#formulario > p{
+   font-size: 0.8em;
+    
 }
