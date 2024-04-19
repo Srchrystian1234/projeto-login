@@ -35,6 +35,9 @@ section#login{ /* section que esta o id de login*/
     height: 500px;/* altura */
     border-radius: 20px; /* borda curvada*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473); /* sombra*/
+    transition: width 0.3s, height 0.3s; /* transicao da aumentada largura ou altura*/
+    /* essa funcao abaixo para dar uma suavezada durante animaação , ela nao vai aceleram na mesma frenquecia*/
+    transition-timing-function: ease;
 }
 /* fazendo a foto virar*/
 /* primeiro fazemos a ligação section#login > div#imagem */

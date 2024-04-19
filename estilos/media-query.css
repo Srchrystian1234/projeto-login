@@ -10,6 +10,10 @@ grandes telas : acima de 1200px
 */
 
  /* versao para tablet*/@media screen and (min-width:768px) and (max-width:992px) {
+     /* colocar um degrader na versao para tablet*/
+     html,body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
     /*  vamos mudar o tamanho dela */
     section#login{
         width: 
@@ -28,4 +32,28 @@ grandes telas : acima de 1200px
         float: right;
         width: 70%;
     }
+}
+/* vamos fazer uma configuraçaõ de desktop*/
+
+@media screen and (min-width:992px) { /* para desktop essa configuração*/
+
+    html,body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    /* configurando o tamanho da tela de login*/
+    section#login{
+        width: 950px;/* configuravel aqui*/
+    }
+    /* configurando a div imagem tamanho e colocando ela ao lado da div formulario*/
+    section#login > div#imagem{ /*confirando a imagem*/
+        float: left; /* colocando do lado esquerdo*/
+        width: 50%; /* largura de 50%*/
+        height: 100%; /* altura de 100%*/
+    }
+
+    section#login > div#formulario{
+        float: right;/* formulario lado esquerdo*/
+        width: 50%; /* largura de 50%*/
+    }
+    /* vamos colocar na css do padrao um animação agora*/
 }
