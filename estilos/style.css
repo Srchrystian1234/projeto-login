@@ -29,12 +29,16 @@ section#login{ /* section que esta o id de login*/
     position: absolute; /* colocando em absolute para centralizar a tela login*/
     left: 50%; /* 50% do left */
     top: 50%; /* 50% do top*/
-    transform: translate(-50%,-50%); /* pra deixar ele bem centralizado*/
+     /* pra deixar ele bem centralizado*/
     overflow:hidden ; /* tudo que tiver fora da borda vai ficar escondido*/
     width: 260px; /* tamanho da caixa de login*/
     height: 500px;/* altura */
     border-radius: 20px; /* borda curvada*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473); /* sombra*/
+
+
+    /* todas as transições sempre por ultimo pra evitar problema*/
+    transform: translate(-50%,-50%);
     transition: width 0.3s, height 0.3s; /* transicao da aumentada largura ou altura*/
     /* essa funcao abaixo para dar uma suavezada durante animaação , ela nao vai aceleram na mesma frenquecia*/
     transition-timing-function: ease;
@@ -65,12 +69,39 @@ div#formulario > p{
 div.campo >label{
     display: none; /* tirando aas palavras login e senha*/
 }
+div.campo > span{
+    color: white;
+    
+    font-size: 2em;
+    width:40px ;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #49a09d;
+    font-size: 1em;
+    /* width tenho que colocar 100% so que ele vai quebrar tenho outra forma de fazer*/
+    width: calc(100% - 44.5px);/* fiz isso pra ficar bem posicionado*/
+    
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform:translateY(-12px); /* aqui pra cima coloquei -50px*/
+    /* importante sem quando tiver uma animação , sempre colocar ele na ulitma linha do seletor , sempre pra evitar bugs*/
+    
+}
+/* dessa forma em baixo se voce clicar em cima ou tiver com foco ele fica branco*/
+div.campo > input:focus-within{ /* focus pra da foco quando eu clicar*/
+    background-color: white;
+    
+}
 form > div.campo{
    background-color: #5f2c82; 
+   border: 2px solid #5f2c82;
    display: block;
    width: 100%;
    height: 40px;
-   border-radius: 5px;
+   border-radius: 8px;
    margin: 5px 0px;
 }
 form > input[type=submit]{
